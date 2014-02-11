@@ -12,7 +12,7 @@ public class Timesheet {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @OneToOne
     @JoinColumn(name="employee_id")
@@ -25,11 +25,11 @@ public class Timesheet {
 
     public Timesheet(){}
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -15,7 +15,7 @@ public class Task {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name="task_employee",
@@ -40,11 +40,11 @@ public class Task {
         completed = false;
     }
 
-    public long getId(){
+    public Long getId(){
         return id;
     }
 
-    public void setId(long id){
+    public void setId(Long id){
         this.id=id;
     }
 
